@@ -6,7 +6,9 @@ white = ( 255, 255, 255)
 green = ( 0, 255, 0)
 red = ( 255, 0, 0)
 
-screen = pygame.display.set_mode(700,500)
+size = (700,500)
+
+screen = pygame.display.set_mode(size)
 pygame.display.set_caption('First Game')
 
 carryOn = True
@@ -19,10 +21,10 @@ while carryOn == True:
         if event.type == pygame.QUIT:
               carryOn = False 
 
-     screen.fill(WHITE)
+        screen.fill(white)
 
-     pygame.display.flip()
+        pygame.display.flip()
      
-     clock.tick(60)
+        clock.tick(60)
 
 pygame.quit()
