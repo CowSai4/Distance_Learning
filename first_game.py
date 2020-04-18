@@ -1,4 +1,5 @@
 import pygame
+from car import Car
 pygame.init()
 
 black = ( 0, 0, 0)
@@ -20,6 +21,10 @@ while carryOn == True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
               carryOn = False 
+
+        playerCar = Car(red, 20, 30)
+        playerCar.rect.x = 200
+        playerCar.rect.y = 300
 
         screen.fill(white)
 
